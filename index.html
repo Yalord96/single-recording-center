@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxygen project</title>
+    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+<header aria-label="шапка сайта" class="header-content">
+    <div class="header">
+        <div class="header__brand" aria-label="логотип сайта">
+            <figure class="brand">
+                <img class="brand__img" src="img/logo.png" alt="логотип Единый центр записи">
+                <figcaption class="brand__name">Единый <br> центр записи</figcaption>
+            </figure>
+            <a class="brand__phone" aria-label="номер телефона" href="tel: 803005000"><i
+                    class="fas fa-phone-square-alt"></i><span>80300 5000</span></a>
+        </div>
+        <div class="menu" role="navigation" aria-label="меню навигации">
+            <nav>
+                <ul class="menu__items" role="list">
+                    <li role="listitem" class="menu__items_main"><a href="">Главная</a></li>
+                    <li role="listitem" class="menu__items services"><a href="">Услуги <img src="img/arrow-down.png"
+                                                                                            alt="стрелка вниз"></a>
+                        <ul class="services__items">
+                            <li role="listitem"><a href="">МРТ</a></li>
+                            <li role="listitem"><a href="">КТ</a></li>
+                            <li role="listitem"><a href="">Рентген</a></li>
+                        </ul>
+                    </li>
+                    <li role="listitem"><a href="">Клиники и кабинеты</a></li>
+                    <li role="listitem"><a href="">О нас</a></li>
+                    <li role="listitem"><a href="">Статьи</a></li>
+                    <li role="listitem"><a href="">FAQ</a></li>
+                    <li role="listitem"><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="clinic_list">
+    <section class="clinic_card" itemtype="http://schema.org/Organization">
+        <div class="clinic_card__head" role="banner">
+            <img src="img/carepoint.png" alt="CarePoint" aria-label="логотип клиники">
+            <div class="clinic_card__title">
+                <h5 itemprop="name" class="clinic_card__name" aria-label="Название клиники">Название клиники</h5>
+                <p itemprop="streetAddress" class="clinic_card__adrress" aria-labelledby="address">Ленинский проспект,
+                    д. 160, Ленинский проспект</p>
+            </div>
+        </div>
+        <p itemprop="description" class="clinic_card__info" role="contentinfo">Что такое текст «рыба» знают все, кто
+            работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+        <div class="clinic_card__footer">
+            <span class="clinic_card__number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
+                                                                                   href="tel: +380560996665">+3856 0 99 66 65</a></span>
+            <button class="clinic_card__button">Заказать звонок</button>
+        </div>
+    </section>
+</div>
+<!-- <section>
+    <img src="img/laye333r1.png" alt="background">
+    <p>
+        Всю необходимую информацию о том, как и в каком центре<br>
+        сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
+        Вас клиники, цены на диагностику и порядок прохождения<br>
+        процедур, а также записаться на исследование можно по<br>
+        телефону 8 (812) 385-77-56
+    </p>
+    <h2>Оставьте свой номер, а мы<br>Вам перезвоним</h2>
+    <form action="">
+        <input type="tel"  maxlength="13" autocomplete="none" placeholder="+380"
+               pattern="\+380\d{9}" required>
+        <input type="submit">
+    </form>
+</section>
+<section>
+    <div>
+        <img src="img/VectorSmartObject.png" alt="VectorSmartObject">
+        <h3>Best Treatment</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>>
+    <div>
+        <img src="img/emergency_help.png" alt="emergency_help">
+        <h3>Emergency Help</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+    <div>
+        <img src="img/Medical_Staff.png" alt="Medical_Staff">
+        <h3>Medical Staff</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+    <div>
+        <img src="img/Qualified_doctors.png" alt="Qualified_doctors">
+        <h3>BQualified Doctors</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+</section>
+<section>
+<nav>
+    <div>
+        <a href="#MRT">МРТ</a>
+        <a href="#">КТ</a>
+        <a href="#">Рентген исследования</a>
+    </div>
+</nav>
+<div id="MRT">
+    <section>
+        <img src="img/CarePoint.png" alt="CarePoint">
+        <h2>Название клиники</h2>
+        <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <p>Наш номер: +3856 0 99 66 65</p>
+        <button>Заказать звонок</button>
+    </section>
+    <section>
+        <img src="img/CarePoint.png" alt="CarePoint">
+        <h2>Название клиники</h2>
+        <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <p>Наш номер: +3856 0 99 66 65</p>
+        <button>Заказать звонок</button>
+    </section>
+    <section>
+        <img src="img/CarePoint.png" alt="CarePoint">
+        <h2>Название клиники</h2>
+        <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <p>Наш номер: +3856 0 99 66 65</p>
+        <button>Заказать звонок</button>
+    </section>
+    <section>
+        <img src="img/CarePoint.png" alt="CarePoint">
+        <h2>Название клиники</h2>
+        <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <p>Наш номер: +3856 0 99 66 65</p>
+        <button>Заказать звонок</button>
+    </section>
+    <section>
+            <img src="img/CarePoint.png" alt="CarePoint">
+            <h2>Название клиники</h2>
+            <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+            <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+            <p>Наш номер: +3856 0 99 66 65</p>
+            <button>Заказать звонок</button>
+    </section>
+    <section>
+            <img src="img/CarePoint.png" alt="CarePoint">
+            <h2>Название клиники</h2>
+            <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
+            <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,<br>
+                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+            <p>Наш номер: +3856 0 99 66 65</p>
+            <button>Заказать звонок</button>
+    </section>
+    <button>Все кабинеты</button>
+</div>
+</section>
+<section>
+    <div>
+        <h3>Последние статьи</h3>
+           <ul>
+                <li>
+                    <img src="img/last_article54545454.png" alt="Last article">
+                    <p>
+                        Что такое текст «рыба» знают все, кто работает с<br>
+                        версткой журналов, дизайном и разработкой сайтов.<br>
+                        Этот текст служит для демонстрации того, как<br>
+                        контент впоследствии будет выглядеть на готовой<br>
+                        странице, чтобы увидеть, правильно ли<br>
+                        размещаются абзацы, отступы, хорошо ли смотрятся<br>
+                        шрифты. Такие рыбные тексты, как правило, не несут<br>
+                         никакой смысловой нагрузки.<br>
+                    </p>
+                    <p>
+                        На моменте создания макета у дизайнера нет<br>
+                        готовых текстов, поэтому генерируется некий<br>
+                        демонстрационный текст. Некоторые студии<br>
+                        предпочитают писать такой текст самостоятельно, но<br>
+                        чаще используются готовые тексты, созданные<br>
+                        программой – генератором текста. Более того, у<br>
+                        такого текста есть один неоспоримый плюс –<br>
+                    </p>
+                    <button>Читать подробнее</button>
+                </li>
+            </ul>
+        <button><img src="img/arrow_left.png" alt="arrow_left"></button>
+        <button><img src="img/arrow_right.png" alt="arrow_right"></button>
+    </div>
+    <div>
+        <h3>Отзывы о нас</h3>
+        <ul>
+            <li>
+                <p>
+                    Что такое текст «рыба» знают все, кто работает с<br>
+                    версткой журналов, дизайном и разработкой сайтов.<br>
+                    Этот текст служит для демонстрации того, как<br>
+                    контент впоследствии будет выглядеть на готовой<br>
+                    странице, чтобы увидеть, правильно ли<br>
+                    размещаются абзацы, отступы, хорошо ли смотрятся<br>
+                    шрифты. Такие рыбные тексты, как правило, не несут<br>
+                     никакой смысловой нагрузки.<br>
+                </p>
+                <p>
+                    На моменте создания макета у дизайнера нет<br>
+                    готовых текстов, поэтому генерируется некий<br>
+                    демонстрационный текст. Некоторые студии<br>
+                    предпочитают писать такой текст самостоятельно, но<br>
+                    чаще используются готовые тексты, созданные<br>
+                    программой – генератором текста. Более того, у<br>
+                    такого текста есть один неоспоримый плюс –<br>
+                </p>
+            </li>
+        </ul>
+        <button><img src="img/arrow_left.png" alt="arrow_left"></button>
+        <button><img src="img/arrow_right.png" alt="arrow_right"></button>
+    </div>
+</section>  -->
+<footer>
+    <div class="footer-brand">
+        <div class="footer">
+            <figure class="brand" role="banner">
+                <img class="brand__img" src="img/logo.png" alt="логотип Единый центр записи">
+                <figcaption class="brand__name">Единый <br> центр записи</figcaption>
+            </figure>
+            <form action="" class="call-back">
+                <label aria-label="Заказать звонок:" for="call-back__input" class="call-back__lable">Заказать
+                    звонок:</label>
+                <input aria-label="Поле для номера обратной связи" id="call-back__input" type="tel" maxlength="13"
+                       autocomplete="none" placeholder="+380"
+                       pattern="\+380\d{9}" required>
+                <button aria-label="Отправить" type="submit" class="call-back__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <section class="footer-content">
+        <div class="footer-content__block">
+            <div class="footer-content__column" role="navigation">
+                <h6 class="footer-content__title">Get in touch</h6>
+                <ul>
+                    <li class="list__item">
+                        <img class="list__item-mail" src="img/envelope.png" alt="envelope">
+                        <div class="list__item-text">
+                            <a href="mailto:free@psdfreebies.com"><span>free@psdfreebies.com</span></a>
+                            <a href="mailto:free@psdfreebies.com"><span>free@psdfreebies.com</span></a>
+                        </div>
+
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item_phone" src="img/icon_phone.png" alt="phone">
+                        <div class="list__item-text">
+                            <a href="tel: +1234567890"><p>+123 456 7890</p></a>
+                            <a href="tel: +1234567890"><p>+123 456 7890</p></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <img class="list__item-map" src="img/icon_metka.png" alt="Map">
+                        <div class="list__item-text">
+                            <a href="https://goo.gl/maps/6xWAfdGvjfwsLS92A"><p>123, Main Road, New City,</p></a>
+                            <a href="https://goo.gl/maps/6xWAfdGvjfwsLS92A"><p>My Country 123456</p></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div>
+                            <ul class="footer__socials">
+                                <li><a href="#" class="socials"></a></li>
+                                <li><a href="#" class="socials socials_google"></a></li>
+                                <li><a href="#" class="socials socials_vk"></a></li>
+                                <li><a href="#" class="socials socials_youtube"></a></li>
+                                <li><a href="#" class="socials socials_ln"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content__column" role="navigation">
+                <h6 class="footer-content__title">Quick Links</h6>
+                <ul class="footer-links">
+                    <li class="footer-links__item"><a class="arrow" href="#">About us</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Blog</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Contract us</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Faq</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Insurance</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Cotact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content__column" role="navigation">
+                <h6 class="footer-content__title">Our Services</h6>
+                <ul class="footer-links">
+                    <li class="footer-links__item"><a class="arrow" href="#">Work Injuries</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Sport Injuries</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Cold Laser Therapy</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Massage Therapy</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Physiotherapy</a></li>
+                    <li class="footer-links__item"><a class="arrow" href="#">Chiropratic Therapy</a></li>
+                </ul>
+            </div>
+            <div class="footer-content__column" role="navigation">
+                <form class="footer-form" role="textbox">
+                    <h6 class="footer-content__title" for="footer-form">Enquiry Form</h6>
+                    <p><input aria-label="Поле для ввода имени" class="footer-form__input footer-form__name" type="text"
+                              placeholder="Name" required></p>
+                    <p><input aria-label="Поле для ввода телефона" class="footer-form__input" type="tel"
+                              placeholder="Phone" required></p>
+                    <p><textarea aria-label="Поле для сообщения" class="footer-form__input footer-form__textarea"
+                                 rows="5" cols="25" name="text" placeholder="Message"></textarea></p>
+                    <p><input class="footer-form__button" type="submit" value="SUBMIT"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer-info">
+        <p>Copyright © 2017.</p>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

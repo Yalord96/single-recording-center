@@ -1,0 +1,1504 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../../fonts/myriad_pro.otf); }
+
+@font-face {
+  font-family: "Calibri";
+  src: url(../../fonts/calibri.ttf); }
+
+@font-face {
+  font-family: "Tahoma";
+  src: url(../../fonts/tahoma.ttf); }
+
+.header-content {
+  background: #43b1d2; }
+
+.header {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.menu__items {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.brand__phone {
+  font-size: 20px;
+  font-family: "Tahoma";
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left; }
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+  .header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 19px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone span {
+    padding-left: 4px; }
+  .menu a, li {
+    color: #494848;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Calibri"; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 10px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; } }
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+  .header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 19px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone span {
+    padding-left: 4px; }
+  .menu a, li {
+    color: #494848;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Calibri"; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-basis: 100%; */
+    padding: 0;
+    flex-wrap: wrap; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 10px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; } }
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+  .header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 0 10px; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 19px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone span {
+    padding-left: 4px; }
+  .menu a, li {
+    color: #494848;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Calibri"; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 10px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; } }
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .brand {
+    display: flex;
+    align-items: center; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone span {
+    padding-left: 10px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin-top: -35px;
+    padding: 0 16px 16px 0; }
+  .menu a, li {
+    color: #494848;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Calibri"; }
+  .menu__items a {
+    text-decoration: none; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 16px; }
+  .services {
+    margin: 0;
+    padding: 0; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; } }
+
+@media (min-width: 1200px) {
+  .header__brand {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .brand {
+    display: flex;
+    align-items: center; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone span {
+    padding-left: 10px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin-top: -35px;
+    padding: 0 16px 16px 0; }
+  .menu a, li {
+    color: #494848;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Calibri"; }
+  .menu__items a {
+    text-decoration: none; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 16px; }
+  .services {
+    margin: 0;
+    padding: 0; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; } }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.footer-brand {
+  background-color: #43b1d2; }
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.footer-content {
+  background-color: #e5e9f2;
+  font-family: "Myriad Pro"; }
+
+.footer-content__title {
+  font-family: "Calibri";
+  font-size: 24px;
+  margin: 30px 0 15px 0; }
+
+.footer-content__block {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around; }
+
+.footer-content__column {
+  display: flex;
+  flex-direction: column; }
+
+.list__item {
+  display: flex; }
+
+.list__item-text {
+  display: flex;
+  flex-direction: column; }
+
+.menu__items_main:first-child a {
+  color: white; }
+
+.footer__socials {
+  display: flex;
+  padding: 0; }
+
+.socials {
+  border: none;
+  height: 30px;
+  width: 40px;
+  display: inline-block;
+  background: url(../../img/socials.png) no-repeat; }
+
+.socials_google {
+  background-position: -40px 0;
+  cursor: pointer; }
+
+.socials_vk {
+  background-position: -100px 0;
+  cursor: pointer; }
+
+.socials_youtube {
+  background-position: -155px 0;
+  cursor: pointer; }
+
+.socials_ln {
+  background-position: -205px 0;
+  cursor: pointer; }
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+  .footer {
+    flex-direction: column; }
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+  .brand__name {
+    padding-left: 16px;
+    font-size: 19px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35); }
+  .brand__phone {
+    font-size: 15px;
+    font-family: "Tahoma";
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left; }
+  .brand__phone span {
+    padding-left: 4px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .call-back {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .call-back__lable {
+    font-size: 18px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    padding-bottom: 10px; }
+  #call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    padding-left: 15px; }
+  .call-back__button {
+    width: 102px;
+    height: 30px;
+    background-color: #cbd4e6;
+    border-radius: 8px;
+    border-left: solid 1px #494848;
+    margin-top: 10px; }
+  .list__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  .footer-links a, li {
+    font-family: "Myriad Pro";
+    color: #a7aab1;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .footer-content__column {
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-form {
+    text-align: center; }
+  .footer-form__name {
+    margin-top: 40px;
+    background-color: #e5e9f2; }
+  .footer-form__textarea {
+    margin-top: 30px; }
+  .footer-form__input {
+    background-color: #e5e9f2;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #b2b5bc;
+    border-bottom: 1px #000 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 200px;
+    padding: 0  0 15px 0; }
+  .footer-form__button {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0082b7;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    color: white;
+    font-family: "";
+    font-weight: 700;
+    text-align: center;
+    width: 136px;
+    height: 36px;
+    border: none; }
+  .footer-content__block {
+    flex-wrap: wrap;
+    padding-bottom: 20px; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; }
+  .footer-content__block {
+    justify-content: center;
+    width: 100%; } }
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .footer {
+    flex-direction: column; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 10px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .call-back {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .call-back__lable {
+    font-size: 18px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    padding-bottom: 10px; }
+  #call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    padding-left: 15px; }
+  .call-back__button {
+    width: 102px;
+    height: 30px;
+    background-color: #cbd4e6;
+    border-radius: 8px;
+    border-left: solid 1px #494848;
+    margin-top: 10px; }
+  .list__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px; }
+  .list__item:last-child {
+    padding-bottom: 0; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  .footer-links a, li {
+    font-family: "Myriad Pro";
+    color: #a7aab1;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .footer-content__column {
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-form {
+    text-align: center; }
+  .footer-form__name {
+    margin-top: 40px;
+    background-color: #e5e9f2; }
+  .footer-form__textarea {
+    margin-top: 30px; }
+  .footer-form__input {
+    background-color: #e5e9f2;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #b2b5bc;
+    border-bottom: 1px #000 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 200px;
+    padding: 0  0 15px 0; }
+  .footer-form__button {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0082b7;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    color: white;
+    font-family: "";
+    font-weight: 700;
+    text-align: center;
+    width: 136px;
+    height: 36px;
+    border: none; }
+  .footer-content__block {
+    flex-wrap: wrap;
+    padding-bottom: 20px; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; }
+  .footer-content__block {
+    justify-content: center;
+    width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .footer {
+    flex-direction: column; }
+  .services__items {
+    background-color: turquoise;
+    display: none;
+    padding: 16px; }
+  .menu__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0; }
+  .menu__items li {
+    list-style-type: none;
+    padding-left: 10px; }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .call-back {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .call-back__lable {
+    font-size: 18px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    padding-bottom: 10px; }
+  #call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    padding-left: 15px; }
+  .call-back__button {
+    width: 102px;
+    height: 30px;
+    background-color: #cbd4e6;
+    border-radius: 8px;
+    border-left: solid 1px #494848;
+    margin-top: 10px; }
+  .list__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  .footer-links a, li {
+    font-family: "Myriad Pro";
+    color: #a7aab1;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .footer-content__column {
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-form {
+    text-align: center; }
+  .footer-form__name {
+    margin-top: 40px;
+    background-color: #e5e9f2; }
+  .footer-form__textarea {
+    margin-top: 30px; }
+  .footer-form__input {
+    background-color: #e5e9f2;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #b2b5bc;
+    border-bottom: 1px #000 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 200px;
+    padding: 0  0 15px 0; }
+  .footer-form__button {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0082b7;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    color: white;
+    font-family: "";
+    font-weight: 700;
+    text-align: center;
+    width: 136px;
+    height: 36px;
+    border: none; }
+  .footer-content__block {
+    flex-wrap: wrap;
+    padding-bottom: 20px; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; }
+  .footer-content__block {
+    justify-content: center;
+    width: 100%; } }
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .call-back {
+    display: flex;
+    align-items: center; }
+  .call-back__lable {
+    font-size: 24px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px; }
+  #call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px 0 0 5px;
+    padding-left: 15px; }
+  .call-back__button {
+    width: 102px;
+    height: 30px;
+    background-color: #cbd4e6;
+    border-radius: 0 8px 8px 0;
+    border-left: solid 1px #494848; }
+  .list__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  .footer-links a, li {
+    font-family: "Myriad Pro";
+    color: #a7aab1;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .footer-content__column {
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-form__name {
+    margin-top: 40px;
+    background-color: #e5e9f2; }
+  .footer-form__textarea {
+    margin-top: 30px; }
+  .footer-form__input {
+    background-color: #e5e9f2;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #b2b5bc;
+    border-bottom: 1px #000 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 200px;
+    padding: 0  0 15px 0; }
+  .footer-form__button {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0082b7;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    color: white;
+    font-family: "";
+    font-weight: 700;
+    text-align: center;
+    width: 136px;
+    height: 36px;
+    border: none; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; } }
+
+@media (min-width: 1200px) {
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px; }
+  .footer-links__item {
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0px; }
+  .footer-links__item:first-child {
+    padding-top: 40px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px; }
+  .call-back {
+    display: flex;
+    align-items: center; }
+  .call-back__lable {
+    font-size: 24px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px; }
+  #call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px 0 0 5px;
+    padding-left: 15px; }
+  .call-back__button {
+    width: 102px;
+    height: 30px;
+    background-color: #cbd4e6;
+    border-radius: 0 8px 8px 0;
+    border-left: solid 1px #494848; }
+  .list__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  .footer-links a, li {
+    font-family: "Myriad Pro";
+    color: #a7aab1;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .footer-content__column {
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-form__name {
+    margin-top: 40px;
+    background-color: #e5e9f2; }
+  .footer-form__textarea {
+    margin-top: 30px; }
+  .footer-form__input {
+    background-color: #e5e9f2;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    color: #b2b5bc;
+    border-bottom: 1px #000 solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    width: 200px;
+    padding: 0  0 15px 0; }
+  .footer-form__button {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0082b7;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Lato";
+    color: white;
+    font-family: "";
+    font-weight: 700;
+    text-align: center;
+    width: 136px;
+    height: 36px;
+    border: none; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; } }
+
+.clinic_card {
+  max-width: 685px;
+  margin: 0 auto;
+  border: 3px solid;
+  border-color: #43b1d2;
+  padding: 20px; }
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+  .clinic_card__head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px; }
+  .clinic_card__title {
+    font-family: "Myriad Pro";
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1px; }
+  .clinic_card__name {
+    margin: 20px 0 40px 0; }
+  .clinic_card__adrress {
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #43b1d2;
+    font-style: italic; }
+  .clinic_card__info {
+    font-family: "Calibri";
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .clinic_card__number {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+  .clinic_card__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .clinic_card__button {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    background-color: #37c3a8;
+    border: solid;
+    border-radius: 5px;
+    border-color: #37c3a8;
+    color: white;
+    padding: 5px 10px; } }
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .clinic_card__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+  .clinic_card__title {
+    font-family: "Myriad Pro";
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: end; }
+  .clinic_card__name {
+    margin: 20px 0 40px 0; }
+  .clinic_card__adrress {
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #43b1d2;
+    font-style: italic; }
+  .clinic_card__info {
+    font-family: "Calibri";
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .clinic_card__number {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: bold; }
+  .clinic_card__footer {
+    display: flex;
+    justify-content: space-between; }
+  .clinic_card__button {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    background-color: #37c3a8;
+    border: solid;
+    border-radius: 5px;
+    border-color: #37c3a8;
+    color: white;
+    padding: 5px 10px; } }
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .clinic_card__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+  .clinic_card__title {
+    font-family: "Myriad Pro";
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: end; }
+  .clinic_card__name {
+    margin: 20px 0 40px 0; }
+  .clinic_card__adrress {
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #43b1d2;
+    font-style: italic; }
+  .clinic_card__info {
+    font-family: "Calibri";
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .clinic_card__number {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: bold; }
+  .clinic_card__footer {
+    display: flex;
+    justify-content: space-between; }
+  .clinic_card__button {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    background-color: #37c3a8;
+    border: solid;
+    border-radius: 5px;
+    border-color: #37c3a8;
+    color: white;
+    padding: 5px 10px; } }
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .clinic_card__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+  .clinic_card__title {
+    font-family: "Myriad Pro";
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: end; }
+  .clinic_card__name {
+    margin: 20px 0 40px 0; }
+  .clinic_card__adrress {
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #43b1d2;
+    font-style: italic; }
+  .clinic_card__info {
+    font-family: "Calibri";
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .clinic_card__number {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: bold; }
+  .clinic_card__footer {
+    display: flex;
+    justify-content: space-between; }
+  .clinic_card__button {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    background-color: #37c3a8;
+    border: solid;
+    border-radius: 5px;
+    border-color: #37c3a8;
+    color: white;
+    padding: 5px 10px; } }
+
+@media (min-width: 1200px) {
+  .clinic_card__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+  .clinic_card__title {
+    font-family: "Myriad Pro";
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: end; }
+  .clinic_card__name {
+    margin: 20px 0 40px 0; }
+  .clinic_card__adrress {
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #43b1d2;
+    font-style: italic; }
+  .clinic_card__info {
+    font-family: "Calibri";
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .clinic_card__number {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: bold; }
+  .clinic_card__footer {
+    display: flex;
+    justify-content: space-between; }
+  .clinic_card__button {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    background-color: #37c3a8;
+    border: solid;
+    border-radius: 5px;
+    border-color: #37c3a8;
+    color: white;
+    padding: 5px 10px; } }
