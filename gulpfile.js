@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var pipeline = require('readable-stream').pipeline;
-// var watch = require('gulp-watch');
  
 // gulp.task('js', function () {
 //   return pipeline(
@@ -19,7 +18,6 @@ gulp.task('scss', function () {
 });
 
 gulp.task('watch', function(){
-  // gulp.watch( 'src/*.scss', gulp.series(['scss']));
   gulp.watch( 'src/**/*.scss', gulp.series(['scss']));
   // gulp.watch( 'src/**.js', gulp.series(['js']))
 });

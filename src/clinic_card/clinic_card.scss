@@ -1,49 +1,50 @@
-.clinic_card{
+.clinic_card {
   max-width: 685px;
   margin: 0 auto;
   border: 3px solid;
   border-color: #43b1d2;
   padding: 20px;
 }
-@media (min-width: 320px) and (max-width: 575.99px){
-  .clinic_card__head{
+
+@media (min-width: 320px) and (max-width: 575.99px) {
+  .clinic_card__head {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 40px;
   }
-  .clinic_card__title{
+  .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 28px;
     font-weight: bold;
     line-height: 1px;
   }
-  .clinic_card__name{
+  .clinic_card__name {
     margin: 20px 0 40px 0;
   }
-  .clinic_card__adrress{
+  .clinic_card__adrress {
     font-family: "Tahoma";
     font-size: 14px;
     color: #43b1d2;
     font-style: italic;
   }
-  .clinic_card__info{
+  .clinic_card__info {
     font-family: "Calibri";
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .clinic_card__number{
+  .clinic_card__number {
     font-family: "Myriad Pro";
     font-size: 18px;
     font-weight: bold;
     text-align: center;
   }
-  .clinic_card__footer{
+  .clinic_card__footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .clinic_card__button{
+  .clinic_card__button {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;
@@ -55,13 +56,13 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.99px){
-  .clinic_card__head{
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .clinic_card__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .clinic_card__title{
+  .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 36px;
     font-weight: bold;
@@ -71,30 +72,30 @@
     text-align: end;
 
   }
-  .clinic_card__name{
+  .clinic_card__name {
     margin: 20px 0 40px 0;
   }
-  .clinic_card__adrress{
+  .clinic_card__adrress {
     font-family: "Tahoma";
     font-size: 14px;
     color: #43b1d2;
     font-style: italic;
   }
-  .clinic_card__info{
+  .clinic_card__info {
     font-family: "Calibri";
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .clinic_card__number{
+  .clinic_card__number {
     font-family: "Myriad Pro";
     font-size: 18px;
     font-weight: bold;
   }
-  .clinic_card__footer{
+  .clinic_card__footer {
     display: flex;
     justify-content: space-between;
   }
-  .clinic_card__button{
+  .clinic_card__button {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;
@@ -106,13 +107,13 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.99px){
-  .clinic_card__head{
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .clinic_card__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .clinic_card__title{
+  .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 36px;
     font-weight: bold;
@@ -122,30 +123,30 @@
     text-align: end;
 
   }
-  .clinic_card__name{
+  .clinic_card__name {
     margin: 20px 0 40px 0;
   }
-  .clinic_card__adrress{
+  .clinic_card__adrress {
     font-family: "Tahoma";
     font-size: 14px;
     color: #43b1d2;
     font-style: italic;
   }
-  .clinic_card__info{
+  .clinic_card__info {
     font-family: "Calibri";
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .clinic_card__number{
+  .clinic_card__number {
     font-family: "Myriad Pro";
     font-size: 18px;
     font-weight: bold;
   }
-  .clinic_card__footer{
+  .clinic_card__footer {
     display: flex;
     justify-content: space-between;
   }
-  .clinic_card__button{
+  .clinic_card__button {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;
@@ -157,13 +158,13 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199.99px){
-  .clinic_card__head{
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .clinic_card__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .clinic_card__title{
+  .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 36px;
     font-weight: bold;
@@ -173,30 +174,30 @@
     text-align: end;
 
   }
-  .clinic_card__name{
+  .clinic_card__name {
     margin: 20px 0 40px 0;
   }
-  .clinic_card__adrress{
+  .clinic_card__adrress {
     font-family: "Tahoma";
     font-size: 14px;
     color: #43b1d2;
     font-style: italic;
   }
-  .clinic_card__info{
+  .clinic_card__info {
     font-family: "Calibri";
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .clinic_card__number{
+  .clinic_card__number {
     font-family: "Myriad Pro";
     font-size: 18px;
     font-weight: bold;
   }
-  .clinic_card__footer{
+  .clinic_card__footer {
     display: flex;
     justify-content: space-between;
   }
-  .clinic_card__button{
+  .clinic_card__button {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;
@@ -207,13 +208,14 @@
     padding: 5px 10px;
   }
 }
-@media (min-width: 1200px){
-  .clinic_card__head{
+
+@media (min-width: 1200px) {
+  .clinic_card__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .clinic_card__title{
+  .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 36px;
     font-weight: bold;
@@ -223,30 +225,30 @@
     text-align: end;
 
   }
-  .clinic_card__name{
+  .clinic_card__name {
     margin: 20px 0 40px 0;
   }
-  .clinic_card__adrress{
+  .clinic_card__adrress {
     font-family: "Tahoma";
     font-size: 14px;
     color: #43b1d2;
     font-style: italic;
   }
-  .clinic_card__info{
+  .clinic_card__info {
     font-family: "Calibri";
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .clinic_card__number{
+  .clinic_card__number {
     font-family: "Myriad Pro";
     font-size: 18px;
     font-weight: bold;
   }
-  .clinic_card__footer{
+  .clinic_card__footer {
     display: flex;
     justify-content: space-between;
   }
-  .clinic_card__button{
+  .clinic_card__button {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;

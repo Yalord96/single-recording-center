@@ -1,0 +1,29 @@
+@font-face{
+  font-family: "Myriad Pro";
+  src: url(../../fonts/myriad_pro.otf);
+}
+@font-face{
+  font-family: "Calibri";
+  src: url(../../fonts/calibri.ttf);
+}
+@font-face{
+  font-family: "Tahoma";
+  src: url(../../fonts/tahoma.ttf);
+}
+
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}

@@ -1,17 +1,6 @@
 $primary-color: #43b1d2;
 @import "../node_modules/normalize.css/normalize";
-@font-face{
-    font-family: "Myriad Pro";
-    src: url(../../fonts/myriad_pro.otf);
-}
-@font-face{
-    font-family: "Calibri";
-    src: url(../../fonts/calibri.ttf);
-}
-@font-face{
-    font-family: "Tahoma";
-    src: url(../../fonts/tahoma.ttf);
-}
+@import "src/helpers/reset";
 @import "src/header/header.scss";
 @import "src/footer/footer.scss";
 @import "src/clinic_card/clinic_card.scss";
