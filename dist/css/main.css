@@ -331,6 +331,10 @@ body {
   margin: 0;
   padding: 0; }
 
+.main {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 .header-content {
   background: #43b1d2; }
 
@@ -584,16 +588,15 @@ body {
   .footer-brand {
     background-color: #43b1d2; }
 
-.arrow::before {
-  content: "\25B6";
-  color: #0087be;
-  padding-right: 21px; }
-
 .arrow {
   font-family: "Myriad Pro";
   color: #a7aab1;
   font-size: 14px;
   letter-spacing: 1px; }
+  .arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
 
 .list__item-text_link {
   font-family: "Myriad Pro";
@@ -1172,19 +1175,27 @@ body {
     align-items: center;
     height: 105px; } }
 
-.clinic_card {
-  max-width: 685px;
-  margin: 0 auto;
-  border: 3px solid;
-  border-color: #43b1d2;
-  padding: 20px; }
+.clinic {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .clinic_card {
+    max-width: 580px;
+    margin: 0 auto;
+    border: 3px solid;
+    border-color: #43b1d2;
+    padding: 20px;
+    margin: 20px; }
 
-@media (min-width: 320px) and (max-width: 575.99px) {
+@media (min-width: 320px) and (max-width: 575px) {
+  .clinic_card__logo {
+    max-width: 200px;
+    margin: 0 auto; }
   .clinic_card__head {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-align: center; }
   .clinic_card__title {
     font-family: "Myriad Pro";
     font-size: 28px;
@@ -1220,7 +1231,7 @@ body {
     color: white;
     padding: 5px 10px; } }
 
-@media (min-width: 576px) and (max-width: 767.99px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .clinic_card__head {
     display: flex;
     justify-content: space-between;
@@ -1261,7 +1272,7 @@ body {
     color: white;
     padding: 5px 10px; } }
 
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .clinic_card__head {
     display: flex;
     justify-content: space-between;
@@ -1302,7 +1313,7 @@ body {
     color: white;
     padding: 5px 10px; } }
 
-@media (min-width: 992px) and (max-width: 1199.99px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .clinic_card__head {
     display: flex;
     justify-content: space-between;

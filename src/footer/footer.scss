@@ -7,17 +7,18 @@
   }
 }
 
-.arrow::before {
-  content: "\25B6";
-  color: #0087be;
-  padding-right: 21px;
-}
+
 
 .arrow {
   font-family: "Myriad Pro";
   color: #a7aab1;
   font-size: 14px;
   letter-spacing: 1px;
+  &::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px;
+  }
 }
 
 .list__item-text_link {
