@@ -1,0 +1,15 @@
+.brand {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: "Calibri";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);
+  }
+}

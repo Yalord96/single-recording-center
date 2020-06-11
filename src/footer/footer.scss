@@ -6,9 +6,6 @@
     background-color: #43b1d2;
   }
 }
-
-
-
 .arrow {
   font-family: "Myriad Pro";
   color: #a7aab1;
@@ -412,14 +409,13 @@
       padding-right: 10px;
     }
 
-    &__input {
+    #call-back__input {
       border: none;
       width: 200px;
       height: 28px;
       border-radius: 5px 0 0 5px;
       padding-left: 15px;
     }
-
     &__button {
       width: 102px;
       height: 30px;
