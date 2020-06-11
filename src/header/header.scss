@@ -1,68 +1,76 @@
 .header {
   max-width: 1440px;
   margin: 0 auto;
+
   &-content {
     background: #43b1d2;
   }
+
   &__brand {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    @media (max-width: 428px) {
-      .brand {
-        margin: 20px;
+  }
+}
 
-        &__img {
-          height: 40px;
-          width: 40px;
-        }
+////////////////////////////
+.brand {
+  @media (max-width: 443px) {
+    display: flex;
+    align-items: center;
+    margin: 15px;
 
-        &__name {
-          font-size: 16px;
-        }
+  }
 
-        &__phone_number {
-          font-size: 17px;
-        }
-      }
+  &__img {
+    @media (max-width: 443px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__name {
+    @media (max-width: 443px) {
+      font-size: 16px;
+    }
+  }
+
+  &__phone {
+    font-size: 20px;
+    font-family: "Tahoma";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    padding-right: 20px;
+    @media (max-width: 443px) {
+      font-size: 14px;
+      padding-right: 5px;
+    }
+
+    &_number {
+      padding-left: 5px;
     }
   }
 }
 
-.brand__phone {
-  font-size: 20px;
-  font-family: "Tahoma";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: left;
+///////////////////////////
 
-  &_number {
-    padding: 0 15px 0 10px;
-  }
-}
 
 .menu {
-  @media (min-width: 812px) {
+  @media (max-width: 806px) {
     display: flex;
     justify-content: flex-end;
     padding: 0;
   }
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 806px) and (max-width: 992px) {
     .menu {
       padding: 15px 0 5px 0;
     }
   }
   @media (min-width: 320px) and (max-width: 576px) {
-    .brand {
-      display: flex;
-      align-items: center;
-      &__name {
-        padding-left: 5px;
-      }
-    }
     .menu {
-      padding-top: 5px;
+      padding-top: 10px;
 
       &__items {
         display: flex;
@@ -70,7 +78,6 @@
         justify-content: center;
         flex-wrap: wrap;
         text-decoration: none;
-        padding: 0 10px 10px 0;
 
         &_links {
           font-size: 16px;
@@ -88,7 +95,6 @@
         justify-content: center;
         flex-wrap: wrap;
         text-decoration: none;
-        padding: 0 10px 10px 0;
       }
     }
 
@@ -102,7 +108,7 @@
     margin: 0;
     padding: 0 16px 16px 0;
 
-    &__items_main:first-child {
+    &_main:first-child {
       color: white;
     }
 

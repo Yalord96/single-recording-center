@@ -1,7 +1,9 @@
 $primary-color: #43b1d2;
+
 @import "../node_modules/normalize.css/normalize";
 @import "src/helpers/reset";
+@import "src/brand/brand.scss";
 @import "src/header/header.scss";
 @import "src/footer/footer.scss";
 @import "src/clinic_card/clinic_card.scss";
-@import "src/brand/brand.scss";
+
