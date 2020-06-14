@@ -1,6 +1,7 @@
-.articles{
+.articles {
   background-color: #e5e9f2;
-  &__block{
+
+  &__block {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -12,25 +13,31 @@
     }
   }
 }
-.article{
+
+.article {
   @media (max-width: 1232px) {
     max-width: 810px;
     margin: 0 auto;
-      }
-  &__title{
+  }
+
+  &__title {
     font-size: 36px;
     font-style: italic;
     @media (max-width: 806px) {
       text-align: center;
     }
   }
-  &__photo{
+
+  &__photo {
     @media (max-width: 400px) {
       width: 100%;
+    }
+    @media (max-width: 806px) {
       margin-bottom: 10px;
     }
   }
-  &__content{
+
+  &__content {
     display: flex;
     @media (max-width: 806px) {
       display: flex;
@@ -38,13 +45,14 @@
       align-items: center;
     }
   }
-  &__text{
+
+  &__text {
     font-size: 18px;
     line-height: 14px;
     color: #494848;
-    padding: 0 20px;
   }
-  &__section{
+
+  &__section {
     margin-bottom: 20px;
     @media (max-width: 500px) {
       &_br {
@@ -52,20 +60,22 @@
       }
     }
   }
-  &__buttons{
+
+  &__buttons {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    @media (max-width: 400px){
+    @media (max-width: 400px) {
       display: flex;
       justify-content: space-around;
     }
 
   }
-  &__arrows{
+
+  &__arrows {
     display: flex;
 
-    &_arrow{
+    &_arrow {
       background: #cbd4e6;
       border: none;
       border-radius: 5px;
@@ -75,16 +85,14 @@
       width: 45px;
       height: 36px;
       margin-left: 10px;
-      //@media (max-width: 400px){
-      //  width: 30px;
-      //  height: 25px;
-      //}
     }
-    &_arrow:first-child{
+
+    &_arrow:first-child {
       margin-right: 5px;
     }
   }
-  &__read-more{
+
+  &__read-more {
     font-family: "Myriad Pro";
     font-size: 18px;
     background-color: #37c3a8;
@@ -94,7 +102,8 @@
     color: white;
     padding: 5px 10px;
   }
-  &__reviews{
+
+  &__reviews {
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;

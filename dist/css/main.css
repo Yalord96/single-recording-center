@@ -646,7 +646,10 @@ figure {
 
 @media (max-width: 400px) {
   .article__photo {
-    width: 100%;
+    width: 100%; } }
+
+@media (max-width: 806px) {
+  .article__photo {
     margin-bottom: 10px; } }
 
 .article__content {
@@ -660,8 +663,7 @@ figure {
 .article__text {
   font-size: 18px;
   line-height: 14px;
-  color: #494848;
-  padding: 0 20px; }
+  color: #494848; }
 
 .article__section {
   margin-bottom: 20px; }
