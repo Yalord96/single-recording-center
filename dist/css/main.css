@@ -368,6 +368,10 @@ figure {
     width: 40px;
     height: 40px; } }
 
+@media (min-width: 444px) {
+  .brand__img {
+    margin-left: 20px; } }
+
 @media (max-width: 443px) {
   .brand__name {
     font-size: 16px; } }
@@ -532,6 +536,83 @@ figure {
         .recall__form_button {
           margin-top: 5px;
           border-radius: 6px; } }
+
+.promo {
+  background-color: #cad3e5; }
+  .promo__menu {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 995px) {
+      .promo__menu {
+        height: 324px; } }
+    @media (max-width: 994px) {
+      .promo__menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px; } }
+    .promo__menu_best-treatment {
+      background-color: #43b1d2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .promo__menu_emergency-help {
+      background-color: #3fb6c6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .promo__menu_medical-staff {
+      background-color: #3cbbbb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .promo__menu_qualified-doctors {
+      background-color: #37c3a8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .promo__menu_circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 68px;
+      height: 68px;
+      border-radius: 33px;
+      background-color: #ffffff;
+      margin-bottom: 20px; }
+      @media (max-width: 995px) {
+        .promo__menu_circle {
+          margin-top: 10px; } }
+    .promo__menu_avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; }
+    .promo__menu_name {
+      font-size: 27px;
+      letter-spacing: -1px;
+      color: #ffffff;
+      font-family: "Myriad Pro";
+      font-weight: bold;
+      text-align: center; }
+      @media (max-width: 482px) {
+        .promo__menu_name {
+          font-size: 20px; } }
+    .promo__menu_text {
+      padding: 10px 50px 10px 50px;
+      height: 84px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 27px;
+      color: #ffffff;
+      font-family: "Myriad Pro"; }
+      @media (max-width: 646px) {
+        .promo__menu_text {
+          font-size: 12px; } }
 
 .footer {
   max-width: 1440px;
@@ -839,3 +920,15 @@ figure {
       @media (max-width: 462px) {
         .clinic__card_button {
           margin-top: 10px; } }
+
+.clinic-tab__all-clinic {
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  background-color: #cad3e5;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 25px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center; }

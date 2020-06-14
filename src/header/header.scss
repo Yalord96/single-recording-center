@@ -26,6 +26,9 @@
       width: 40px;
       height: 40px;
     }
+    @media (min-width: 444px) {
+      margin-left: 20px;
+    }
   }
 
   &__name {
