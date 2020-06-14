@@ -316,23 +316,28 @@ template {
   src: url(../../fonts/tahoma.ttf); }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 a {
   text-decoration: none; }
 
 p {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 body {
   margin: 0;
   padding: 0; }
 
 figure {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .brand {
   display: flex;
@@ -621,30 +626,57 @@ figure {
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 1232px) {
+      .articles__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
+
+@media (max-width: 1232px) {
+  .article {
+    max-width: 810px;
+    margin: 0 auto; } }
 
 .article__title {
   font-size: 36px;
   font-style: italic; }
+  @media (max-width: 806px) {
+    .article__title {
+      text-align: center; } }
 
-.article__photo {
-  margin-right: 40px; }
+@media (max-width: 400px) {
+  .article__photo {
+    width: 100%;
+    margin-bottom: 10px; } }
 
 .article__content {
   display: flex; }
+  @media (max-width: 806px) {
+    .article__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .article__text {
   font-size: 18px;
   line-height: 14px;
-  padding-bottom: 15px;
-  color: #494848; }
+  color: #494848;
+  padding: 0 20px; }
 
 .article__section {
   margin-bottom: 20px; }
+  @media (max-width: 500px) {
+    .article__section_br {
+      display: none; } }
 
 .article__buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px; }
+  margin: 20px 0; }
+  @media (max-width: 400px) {
+    .article__buttons {
+      display: flex;
+      justify-content: space-around; } }
 
 .article__arrows {
   display: flex; }
@@ -673,7 +705,12 @@ figure {
 
 .article__reviews {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin: 20px 0; }
+  @media (max-width: 1232px) {
+    .article__reviews {
+      display: flex;
+      justify-content: center; } }
 
 .footer {
   max-width: 1440px;

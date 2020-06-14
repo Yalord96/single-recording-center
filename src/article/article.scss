@@ -5,32 +5,62 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1232px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 .article{
+  @media (max-width: 1232px) {
+    max-width: 810px;
+    margin: 0 auto;
+      }
   &__title{
     font-size: 36px;
     font-style: italic;
+    @media (max-width: 806px) {
+      text-align: center;
+    }
   }
   &__photo{
-    margin-right: 40px;
+    @media (max-width: 400px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
   &__content{
     display: flex;
+    @media (max-width: 806px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__text{
     font-size: 18px;
     line-height: 14px;
-    padding-bottom: 15px;
     color: #494848;
+    padding: 0 20px;
   }
   &__section{
     margin-bottom: 20px;
+    @media (max-width: 500px) {
+      &_br {
+        display: none;
+      }
+    }
   }
   &__buttons{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 20px 0;
+    @media (max-width: 400px){
+      display: flex;
+      justify-content: space-around;
+    }
+
   }
   &__arrows{
     display: flex;
@@ -45,6 +75,10 @@
       width: 45px;
       height: 36px;
       margin-left: 10px;
+      //@media (max-width: 400px){
+      //  width: 30px;
+      //  height: 25px;
+      //}
     }
     &_arrow:first-child{
       margin-right: 5px;
@@ -63,5 +97,10 @@
   &__reviews{
     display: flex;
     justify-content: flex-end;
+    margin: 20px 0;
+    @media (max-width: 1232px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
