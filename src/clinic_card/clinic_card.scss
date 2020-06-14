@@ -1,3 +1,15 @@
+$even: 4px;
+$odd: 2px;
+@for $i from 1 through 6 {
+  .border-#{$i} {
+    @if ($i % 2 == 0) {
+      border: $even solid rgba(random(255), random(255), random(255), $alpha: 1.0)
+    } @else {
+      border: $odd solid rgba(random(255), random(255), random(255), $alpha: 1.0)
+    }
+  }
+}
+
 .clinic {
   display: flex;
   justify-content: center;
@@ -6,8 +18,8 @@
   &__card {
     max-width: 580px;
     margin: 0 auto;
-    border: 3px solid;
-    border-color: #43b1d2;
+    //border: 3px solid;
+    //border-color: #43b1d2;
     padding: 20px;
     margin: 20px;
 
@@ -92,7 +104,8 @@
     }
   }
 }
-.clinic-tab__all-clinic{
+
+.clinic-tab__all-clinic {
   font-family: "Myriad Pro";
   font-size: 18px;
   background-color: $background-color;

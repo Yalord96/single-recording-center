@@ -652,6 +652,10 @@ figure {
   .article__photo {
     margin-bottom: 10px; } }
 
+@media (min-width: 807px) {
+  .article__photo {
+    margin-right: 20px; } }
+
 .article__content {
   display: flex; }
   @media (max-width: 806px) {
@@ -950,6 +954,24 @@ figure {
     background-position: -205px 0;
     cursor: pointer; }
 
+.border-1 {
+  border: 2px solid #cd99ad; }
+
+.border-2 {
+  border: 4px solid #f7b5c6; }
+
+.border-3 {
+  border: 2px solid #e52fce; }
+
+.border-4 {
+  border: 4px solid #b2d529; }
+
+.border-5 {
+  border: 2px solid #f19260; }
+
+.border-6 {
+  border: 4px solid #19a2b8; }
+
 .clinic {
   display: flex;
   justify-content: center;
@@ -957,8 +979,6 @@ figure {
   .clinic__card {
     max-width: 580px;
     margin: 0 auto;
-    border: 3px solid;
-    border-color: #43b1d2;
     padding: 20px;
     margin: 20px; }
     .clinic__card_head {
