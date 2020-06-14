@@ -614,6 +614,67 @@ figure {
         .promo__menu_text {
           font-size: 12px; } }
 
+.articles {
+  background-color: #e5e9f2; }
+  .articles__block {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+
+.article__title {
+  font-size: 36px;
+  font-style: italic; }
+
+.article__photo {
+  margin-right: 40px; }
+
+.article__content {
+  display: flex; }
+
+.article__text {
+  font-size: 18px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  color: #494848; }
+
+.article__section {
+  margin-bottom: 20px; }
+
+.article__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.article__arrows {
+  display: flex; }
+  .article__arrows_arrow {
+    background: #cbd4e6;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 36px;
+    margin-left: 10px; }
+  .article__arrows_arrow:first-child {
+    margin-right: 5px; }
+
+.article__read-more {
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  background-color: #37c3a8;
+  border: solid;
+  border-radius: 5px;
+  border-color: #37c3a8;
+  color: white;
+  padding: 5px 10px; }
+
+.article__reviews {
+  display: flex;
+  justify-content: flex-end; }
+
 .footer {
   max-width: 1440px;
   margin: 0 auto;
