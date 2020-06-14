@@ -13,7 +13,6 @@
   }
 }
 
-////////////////////////////
 .brand {
   @media (max-width: 443px) {
     display: flex;
@@ -54,51 +53,22 @@
   }
 }
 
-///////////////////////////
-
-
 .menu {
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding-top: 10px;
+  }
   @media (max-width: 806px) {
     display: flex;
     justify-content: flex-end;
     padding: 0;
   }
-  @media (min-width: 806px) and (max-width: 992px) {
-    .menu {
-      padding: 15px 0 5px 0;
-    }
-  }
-  @media (min-width: 320px) and (max-width: 576px) {
-    .menu {
-      padding-top: 10px;
+  @media (min-width: 806px) {
 
-      &__items {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-decoration: none;
-
-        &_links {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
-  .menu {
-    padding-top: 15px;
-    @media (max-width: 813px) {
-      &__items {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-decoration: none;
-      }
-    }
+    margin: -20px;
+    padding: 0 40px 40px 0;
 
   }
+
 
   &__items {
     display: flex;
@@ -106,7 +76,17 @@
     text-decoration: none;
     justify-content: flex-end;
     margin: 0;
-    padding: 0 16px 16px 0;
+    //padding: 0 16px 10px 0;
+
+    @media (max-width: 1070px) {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-decoration: none;
+      padding-top: 30px;
+    }
 
     &_main:first-child {
       color: white;
@@ -118,17 +98,21 @@
       font-size: 24px;
       letter-spacing: 1px;
       font-family: "Calibri";
-    }
-
-    &_listitem {
-      list-style-type: none;
       padding-left: 16px;
+      @media (min-width: 320px) and (max-width: 576px) {
+        font-size: 16px;
+      }
 
-    }
 
-    &_services {
-      margin: 0;
-      padding-left: 16px;
+      &_listitem {
+        list-style-type: none;
+
+      }
+
+      &_services {
+        margin: 0;
+        padding-left: 16px;
+      }
     }
   }
 }

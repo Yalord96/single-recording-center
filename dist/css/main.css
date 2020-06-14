@@ -331,10 +331,6 @@ body {
   margin: 0;
   padding: 0; }
 
-.main {
-  max-width: 1440px;
-  margin: 0 auto; }
-
 figure {
   margin: 0; }
 
@@ -391,45 +387,35 @@ figure {
   .brand__phone_number {
     padding-left: 5px; }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .menu {
+    padding-top: 10px; } }
+
 @media (max-width: 806px) {
   .menu {
     display: flex;
     justify-content: flex-end;
     padding: 0; } }
 
-@media (min-width: 806px) and (max-width: 992px) {
-  .menu .menu {
-    padding: 15px 0 5px 0; } }
-
-@media (min-width: 320px) and (max-width: 576px) {
-  .menu .menu {
-    padding-top: 10px; }
-    .menu .menu__items {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      text-decoration: none; }
-      .menu .menu__items_links {
-        font-size: 16px; } }
-
-.menu .menu {
-  padding-top: 15px; }
-  @media (max-width: 813px) {
-    .menu .menu__items {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      text-decoration: none; } }
+@media (min-width: 806px) {
+  .menu {
+    margin: -20px;
+    padding: 0 40px 40px 0; } }
 
 .menu__items {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   justify-content: flex-end;
-  margin: 0;
-  padding: 0 16px 16px 0; }
+  margin: 0; }
+  @media (max-width: 1070px) {
+    .menu__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-decoration: none;
+      padding-top: 30px; } }
   .menu__items_main:first-child {
     color: white; }
   .menu__items_links {
@@ -437,68 +423,332 @@ figure {
     color: #494848;
     font-size: 24px;
     letter-spacing: 1px;
-    font-family: "Calibri"; }
-  .menu__items_listitem {
-    list-style-type: none;
+    font-family: "Calibri";
     padding-left: 16px; }
-  .menu__items_services {
-    margin: 0;
-    padding-left: 16px; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .menu__items_links {
+        font-size: 16px; } }
+    .menu__items_links_listitem {
+      list-style-type: none; }
+    .menu__items_links_services {
+      margin: 0;
+      padding-left: 16px; }
 
 .services__items {
   background-color: turquoise;
   display: none;
   padding: 16px; }
 
+.recall-section {
+  background-color: #cad3e5; }
+
+.recall {
+  background-image: url("../../src/recall/img/header_background.png");
+  height: 515px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end; }
+  .recall__main {
+    padding-right: 20px; }
+    .recall__main_text {
+      max-width: 787px;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 1.25;
+      color: #494848;
+      font-family: "Calibri";
+      text-align: right;
+      margin-top: 100px; }
+      @media (max-width: 1200px) {
+        .recall__main_text {
+          background-color: #fff;
+          opacity: 0.7;
+          text-align: center;
+          padding: 16px;
+          font-size: 16px;
+          margin: 20px 0 0 20px; } }
+    @media (max-width: 1200px) {
+      .recall__main_br {
+        display: none; } }
+    @media (max-width: 1200px) {
+      .recall__main_span {
+        white-space: nowrap; } }
+  .recall__form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; }
+    .recall__form_title {
+      font-size: 36px;
+      letter-spacing: 2px;
+      color: #494848;
+      font-family: "Myriad Pro";
+      font-weight: bold;
+      text-align: right; }
+      @media (max-width: 600px) {
+        .recall__form_title {
+          text-align: center; } }
+      @media (max-width: 1200px) {
+        .recall__form_title {
+          font-size: 30px;
+          color: #fff;
+          filter: drop-shadow(0px 0px 6px #000); } }
+    @media (max-width: 600px) {
+      .recall__form_br {
+        display: none; } }
+    .recall__form_input {
+      display: flex;
+      margin-top: 35px;
+      justify-content: flex-end; }
+      @media (max-width: 400px) {
+        .recall__form_input {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+    .recall__form_phone {
+      border: none;
+      border-radius: 6px 0 0 6px;
+      height: 36px;
+      width: 226px;
+      padding-left: 16px;
+      color: #7a749d;
+      font-family: "Calibri";
+      font-size: 20px; }
+      @media (max-width: 400px) {
+        .recall__form_phone {
+          border-radius: 6px; } }
+    .recall__form_button {
+      outline: none;
+      width: 114px;
+      height: 38px;
+      background-color: #cad3e5;
+      border: 1px solid #000;
+      border-radius: 0 6px 6px 0;
+      font-size: 20px;
+      color: #7a749d;
+      font-family: "Calibri";
+      font-weight: 400; }
+      @media (max-width: 400px) {
+        .recall__form_button {
+          margin-top: 5px;
+          border-radius: 6px; } }
+
 .footer {
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px; }
+  .footer__socials {
+    display: flex;
+    padding: 0; }
   .footer-brand {
     background-color: #43b1d2; }
+  .footer-info {
+    background-color: #43b1d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px; }
 
-.arrow {
-  font-family: "Myriad Pro";
-  color: #a7aab1;
-  font-size: 14px;
-  letter-spacing: 1px; }
-  .arrow::before {
-    content: "\25B6";
-    color: #0087be;
-    padding-right: 21px; }
+@media (max-width: 443px) {
+  .brand {
+    display: flex;
+    align-items: center;
+    margin: 15px; } }
 
-.list__item-text_link {
-  font-family: "Myriad Pro";
-  color: #a7aab1;
-  font-size: 14px;
-  letter-spacing: 1px; }
+@media (max-width: 443px) {
+  .brand__img {
+    width: 40px;
+    height: 40px; } }
+
+@media (max-width: 500px) {
+  .brand__name {
+    font-size: 16px; } }
+
+.brand__phone {
+  font-size: 20px;
+  font-family: "Tahoma";
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  padding-right: 20px; }
+  @media (max-width: 443px) {
+    .brand__phone {
+      font-size: 14px;
+      padding-right: 5px; } }
+  .brand__phone_number {
+    padding-left: 5px; }
+
+.call-back {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 800px) {
+    .call-back {
+      display: flex;
+      flex-direction: column; } }
+  .call-back__lable {
+    font-size: 24px;
+    font-family: "Calibri";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    line-height: 1.7; }
+    @media (max-width: 500px) {
+      .call-back__lable {
+        font-size: 15px; } }
+  .call-back__input {
+    border: none;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px 0 0 5px;
+    padding-left: 15px; }
+    @media (max-width: 800px) {
+      .call-back__input {
+        border-radius: 5px;
+        margin-bottom: 10px; } }
+    @media (max-width: 500px) {
+      .call-back__input {
+        width: 120px;
+        height: 18px; } }
+  .call-back__button {
+    width: 102px;
+    height: 33px;
+    background-color: #cbd4e6;
+    border-radius: 0 8px 8px 0;
+    border-left: solid 1px #494848; }
+    @media (max-width: 800px) {
+      .call-back__button {
+        border-radius: 8px; } }
+    @media (max-width: 500px) {
+      .call-back__button {
+        width: 87px;
+        height: 26px; } }
 
 .footer-content {
   background-color: #e5e9f2;
   font-family: "Myriad Pro"; }
-  .footer-content__title {
-    font-family: "Calibri";
-    font-size: 24px;
-    margin: 30px 0 15px 0; }
   .footer-content__block {
     max-width: 1110px;
     margin: 0 auto;
     padding-top: 80px;
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 1100px) {
+      .footer-content__block {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px; } }
   .footer-content__column {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Calibri";
+    color: black;
+    font-weight: bold; }
+  .footer-content__title {
+    font-family: "Calibri";
+    font-size: 24px;
+    margin: 30px 0 15px 0; }
 
 .list__item {
-  display: flex; }
-
-.list__item-text {
   display: flex;
-  flex-direction: column; }
+  align-items: center;
+  padding-bottom: 60px; }
+  .list__item:first-child {
+    padding-top: 40px; }
+  @media (max-width: 771px) {
+    .list__item:last-child {
+      padding-bottom: 0; } }
+  .list__item-text {
+    font-size: 14px;
+    color: #a7aab1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column; }
+    .list__item-text_link {
+      font-family: "Myriad Pro";
+      color: #a7aab1;
+      font-size: 14px;
+      letter-spacing: 1px; }
+  .list__item_mail {
+    width: 40px;
+    height: 31px; }
+  .list__item_phone {
+    width: 27px;
+    height: 40px;
+    padding-left: 5px;
+    margin-right: 7px; }
 
-.footer__socials {
-  display: flex;
-  padding: 0; }
+.footer-links__item {
+  padding-bottom: 15px;
+  font-size: 16px;
+  letter-spacing: 0px; }
+
+.footer-links__item:first-child {
+  padding-top: 40px; }
+
+.footer-links__arrow {
+  font-family: "Myriad Pro";
+  color: #a7aab1;
+  font-size: 14px;
+  letter-spacing: 1px; }
+  .footer-links__arrow::before {
+    content: "\25B6";
+    color: #0087be;
+    padding-right: 21px; }
+
+@media (max-width: 771px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.footer-form__name {
+  margin-top: 55px;
+  background-color: #e5e9f2; }
+
+.footer-form__textarea {
+  margin-top: 30px; }
+
+.footer-form__input {
+  background-color: #e5e9f2;
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  color: #b2b5bc;
+  border-bottom: 1px #000 solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 15px;
+  letter-spacing: 0px;
+  width: 200px;
+  padding: 0 0 15px 0; }
+  @media (min-width: 415px) and (max-width: 771px) {
+    .footer-form__input {
+      width: 400px; } }
+
+.footer-form__button {
+  margin-top: 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: #0082b7;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-family: "Lato";
+  color: white;
+  font-family: "";
+  font-weight: 700;
+  text-align: center;
+  width: 136px;
+  height: 36px;
+  border: none; }
 
 .socials {
   border: none;
@@ -506,759 +756,86 @@ figure {
   width: 40px;
   display: inline-block;
   background: url(../../img/socials.png) no-repeat; }
-
-.socials_google {
-  background-position: -40px 0;
-  cursor: pointer; }
-
-.socials_vk {
-  background-position: -100px 0;
-  cursor: pointer; }
-
-.socials_youtube {
-  background-position: -155px 0;
-  cursor: pointer; }
-
-.socials_ln {
-  background-position: -205px 0;
-  cursor: pointer; }
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .list__item-text {
-    font-size: 14px;
-    color: #a7aab1;
-    padding-left: 40px; }
-  .footer-links__item {
-    padding-bottom: 15px;
-    font-size: 16px;
-    letter-spacing: 0px; }
-    .footer-links__item:first-child {
-      padding-top: 40px; }
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 16px; }
-  .call-back {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .call-back__lable {
-      font-size: 24px;
-      font-family: "Calibri";
-      color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-right: 10px; }
-    .call-back__button {
-      width: 102px;
-      height: 30px;
-      background-color: #cbd4e6;
-      border-radius: 8px;
-      border-left: solid 1px #494848;
-      margin-top: 10px; }
-  #call-back__input {
-    border: none;
-    width: 200px;
-    height: 28px;
-    border-radius: 5px;
-    padding-left: 15px; }
-  .list__item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 60px; }
-    .list__item_mail {
-      width: 40px;
-      height: 31px; }
-    .list__item_phone {
-      width: 27px;
-      height: 40px;
-      padding-left: 5px;
-      margin-right: 7px; }
-    .list__item:first-child {
-      padding-top: 40px; }
-    .list__item:last-child {
-      padding: 0; }
-  .footer-contentcolumn {
-    font-size: 20px;
-    font-family: "Calibri";
-    color: black;
-    font-weight: bold; }
-  .footer-content__block {
-    flex-wrap: wrap;
-    padding-bottom: 20px; }
-  .footer-form__name {
-    margin-top: 40px;
-    background-color: #e5e9f2; }
-  .footer-form__textarea {
-    margin-top: 30px; }
-  .footer-form__input {
-    background-color: #e5e9f2;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    color: #b2b5bc;
-    border-bottom: 1px #000 solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    width: 200px;
-    padding: 0 0 15px 0; }
-  .footer-form__button {
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-family: "Lato";
-    color: white;
-    font-family: "";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none; }
-  .footer-info {
-    background-color: #43b1d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 105px; } }
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .list__item-text {
-    font-size: 14px;
-    color: #a7aab1;
-    padding-left: 40px; }
-  .footer-links__item {
-    padding-bottom: 15px;
-    font-size: 16px;
-    letter-spacing: 0px; }
-    .footer-links__item:first-child {
-      padding-top: 40px; }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 16px; }
-  .call-back {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .call-back__lable {
-      font-size: 24px;
-      font-family: "Calibri";
-      color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-right: 10px; }
-    .call-back__button {
-      width: 102px;
-      height: 30px;
-      background-color: #cbd4e6;
-      border-radius: 8px;
-      border-left: solid 1px #494848;
-      margin-top: 10px; }
-  #call-back__input {
-    border: none;
-    width: 200px;
-    height: 28px;
-    border-radius: 5px;
-    padding-left: 15px; }
-  .list__item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 60px; }
-    .list__item_mail {
-      width: 40px;
-      height: 31px; }
-    .list__item_phone {
-      width: 27px;
-      height: 40px;
-      padding-left: 5px;
-      margin-right: 7px; }
-    .list__item:first-child {
-      padding-top: 40px; }
-    .list__item:last-child {
-      padding: 0; }
-  .footer-content__column {
-    font-size: 20px;
-    font-family: "Calibri";
-    color: black;
-    font-weight: bold; }
-  .footer-content__block {
-    flex-wrap: wrap;
-    padding-bottom: 20px; }
-  .footer-form__name {
-    margin-top: 40px;
-    background-color: #e5e9f2; }
-  .footer-form__textarea {
-    margin-top: 30px; }
-  .footer-form__input {
-    background-color: #e5e9f2;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    color: #b2b5bc;
-    border-bottom: 1px #000 solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    width: 200px;
-    padding: 0 0 15px 0; }
-  .footer-form__button {
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-family: "Lato";
-    color: white;
-    font-family: "";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none; }
-  .footer-info {
-    background-color: #43b1d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 105px; } }
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .footer-links__item {
-    padding-bottom: 15px;
-    font-size: 16px;
-    letter-spacing: 0px; }
-    .footer-links__item:first-child {
-      padding-top: 40px; }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 16px; }
-  .call-back {
-    display: flex;
-    align-items: center; }
-    .call-back__lable {
-      font-size: 24px;
-      font-family: "Calibri";
-      color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-right: 10px; }
-    .call-back #call-back__input {
-      border: none;
-      width: 200px;
-      height: 28px;
-      border-radius: 5px 0 0 5px;
-      padding-left: 15px; }
-    .call-back__button {
-      width: 102px;
-      height: 30px;
-      background-color: #cbd4e6;
-      border-radius: 0 8px 8px 0;
-      border-left: solid 1px #494848; }
-  .list__item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 60px; }
-    .list__item_mail {
-      width: 40px;
-      height: 31px; }
-    .list__item_phone {
-      width: 27px;
-      height: 40px;
-      padding-left: 5px;
-      margin-right: 7px; }
-    .list__item-text {
-      font-size: 14px;
-      color: #a7aab1;
-      padding-left: 40px; }
-    .list__item:first-child {
-      padding-top: 40px; }
-    .list__item:last-child {
-      padding: 0; }
-  .footer__content__column {
-    font-size: 20px;
-    font-family: "Calibri";
-    color: black;
-    font-weight: bold;
-    padding-left: 25px; }
-  .footer__content__block {
-    flex-wrap: wrap;
-    padding-bottom: 20px; }
-  .footer-form__name {
-    margin-top: 40px;
-    background-color: #e5e9f2; }
-  .footer-form__textarea {
-    margin-top: 30px; }
-  .footer-form__input {
-    background-color: #e5e9f2;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    color: #b2b5bc;
-    border-bottom: 1px #000 solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    width: 200px;
-    padding: 0 0 15px 0; }
-  .footer-form__button {
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-family: "Lato";
-    color: white;
-    font-family: "";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none; }
-  .footer-info {
-    background-color: #43b1d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 105px; } }
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .footer-links__item {
-    padding-bottom: 15px;
-    font-size: 16px;
-    letter-spacing: 0px; }
-  .footer-links__item:first-child {
-    padding-top: 40px; }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 16px; }
-  .call-back {
-    display: flex;
-    align-items: center; }
-    .call-back__lable {
-      font-size: 24px;
-      font-family: "Calibri";
-      color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-right: 10px; }
-    .call-back__button {
-      width: 102px;
-      height: 30px;
-      background-color: #cbd4e6;
-      border-radius: 0 8px 8px 0;
-      border-left: solid 1px #494848; }
-  #call-back__input {
-    border: none;
-    width: 200px;
-    height: 28px;
-    border-radius: 5px 0 0 5px;
-    padding-left: 15px; }
-  .list__item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 60px; }
-    .list__item-text {
-      font-size: 14px;
-      color: #a7aab1;
-      padding-left: 40px; }
-    .list__item_mail {
-      width: 40px;
-      height: 31px; }
-    .list__item_phone {
-      width: 27px;
-      height: 40px;
-      padding-left: 5px;
-      margin-right: 7px; }
-  .list__item:first-child {
-    padding-top: 40px; }
-  .footer-content__column {
-    font-size: 20px;
-    font-family: "Calibri";
-    color: black;
-    font-weight: bold; }
-  .footer-form__name {
-    margin-top: 40px;
-    background-color: #e5e9f2; }
-  .footer-form__textarea {
-    margin-top: 30px; }
-  .footer-form__input {
-    background-color: #e5e9f2;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    color: #b2b5bc;
-    border-bottom: 1px #000 solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    width: 200px;
-    padding: 0 0 15px 0; }
-  .footer-form__button {
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-family: "Lato";
-    color: white;
-    font-family: "";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none; }
-  .footer-info {
-    background-color: #43b1d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 105px; } }
-
-@media (min-width: 1200px) {
-  .footer-links__item {
-    padding-bottom: 15px;
-    font-size: 16px;
-    letter-spacing: 0px; }
-  .footer-links__item:first-child {
-    padding-top: 40px; }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 16px; }
-  .call-back {
-    display: flex;
-    align-items: center; }
-    .call-back__lable {
-      font-size: 24px;
-      font-family: "Calibri";
-      color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding-right: 10px; }
-    .call-back__button {
-      width: 102px;
-      height: 30px;
-      background-color: #cbd4e6;
-      border-radius: 0 8px 8px 0;
-      border-left: solid 1px #494848; }
-  #call-back__input {
-    border: none;
-    width: 200px;
-    height: 28px;
-    border-radius: 5px 0 0 5px;
-    padding-left: 15px; }
-  .list__item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 60px; }
-    .list__item-text {
-      font-size: 14px;
-      color: #a7aab1;
-      padding-left: 40px; }
-    .list__item_mail {
-      width: 40px;
-      height: 31px; }
-    .list__item_phone {
-      width: 27px;
-      height: 40px;
-      padding-left: 5px;
-      margin-right: 7px; }
-  .list__item:first-child {
-    padding-top: 40px; }
-  .footer-content__column {
-    font-size: 20px;
-    font-family: "Calibri";
-    color: black;
-    font-weight: bold; }
-  .footer-form__name {
-    margin-top: 40px;
-    background-color: #e5e9f2; }
-  .footer-form__textarea {
-    margin-top: 30px; }
-  .footer-form__input {
-    background-color: #e5e9f2;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    color: #b2b5bc;
-    border-bottom: 1px #000 solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 15px;
-    letter-spacing: 0px;
-    width: 200px;
-    padding: 0 0 15px 0; }
-  .footer-form__button {
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-family: "Lato";
-    color: white;
-    font-family: "";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none; }
-  .footer-info {
-    background-color: #43b1d2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 105px; } }
+  .socials_google {
+    background-position: -40px 0;
+    cursor: pointer; }
+  .socials_vk {
+    background-position: -100px 0;
+    cursor: pointer; }
+  .socials_youtube {
+    background-position: -155px 0;
+    cursor: pointer; }
+  .socials_ln {
+    background-position: -205px 0;
+    cursor: pointer; }
 
 .clinic {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .clinic_card {
+  .clinic__card {
     max-width: 580px;
     margin: 0 auto;
     border: 3px solid;
     border-color: #43b1d2;
     padding: 20px;
     margin: 20px; }
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .clinic_card__logo {
-    max-width: 200px;
-    margin: 0 auto; }
-  .clinic_card__head {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    text-align: center; }
-  .clinic_card__title {
-    font-family: "Myriad Pro";
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1px; }
-  .clinic_card__name {
-    margin: 20px 0 40px 0; }
-  .clinic_card__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic; }
-  .clinic_card__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .clinic_card__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center; }
-  .clinic_card__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  .clinic_card__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px; } }
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .clinic_card__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-  .clinic_card__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end; }
-  .clinic_card__name {
-    margin: 20px 0 40px 0; }
-  .clinic_card__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic; }
-  .clinic_card__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .clinic_card__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold; }
-  .clinic_card__footer {
-    display: flex;
-    justify-content: space-between; }
-  .clinic_card__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .clinic_card__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-  .clinic_card__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end; }
-  .clinic_card__name {
-    margin: 20px 0 40px 0; }
-  .clinic_card__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic; }
-  .clinic_card__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .clinic_card__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold; }
-  .clinic_card__footer {
-    display: flex;
-    justify-content: space-between; }
-  .clinic_card__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .clinic_card__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-  .clinic_card__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end; }
-  .clinic_card__name {
-    margin: 20px 0 40px 0; }
-  .clinic_card__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic; }
-  .clinic_card__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .clinic_card__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold; }
-  .clinic_card__footer {
-    display: flex;
-    justify-content: space-between; }
-  .clinic_card__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px; } }
-
-@media (min-width: 1200px) {
-  .clinic_card__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-  .clinic_card__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end; }
-  .clinic_card__name {
-    margin: 20px 0 40px 0; }
-  .clinic_card__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic; }
-  .clinic_card__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px; }
-  .clinic_card__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold; }
-  .clinic_card__footer {
-    display: flex;
-    justify-content: space-between; }
-  .clinic_card__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px; } }
+    .clinic__card_head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      @media (max-width: 627px) {
+        .clinic__card_head {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+    .clinic__card_logo {
+      width: 200px;
+      margin: 0 auto; }
+    .clinic__card_title {
+      font-family: "Myriad Pro";
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: end; }
+      @media (max-width: 627px) {
+        .clinic__card_title {
+          font-size: 26px;
+          text-align: center; } }
+    .clinic__card_name {
+      margin: 10px 0px 35px 0px; }
+    .clinic__card_adrress {
+      font-family: "Tahoma";
+      font-size: 14px;
+      color: #43b1d2;
+      font-style: italic; }
+    .clinic__card_info {
+      font-family: "Calibri";
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .clinic__card_footer {
+      display: flex;
+      justify-content: space-between; }
+      @media (max-width: 462px) {
+        .clinic__card_footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+    .clinic__card_number {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      font-weight: bold; }
+    .clinic__card_button {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      background-color: #37c3a8;
+      border: solid;
+      border-radius: 5px;
+      border-color: #37c3a8;
+      color: white;
+      padding: 5px 10px; }
+      @media (max-width: 462px) {
+        .clinic__card_button {
+          margin-top: 10px; } }

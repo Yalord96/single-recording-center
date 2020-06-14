@@ -1,280 +1,94 @@
-.clinic{
+.clinic {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  &_card {
+
+  &__card {
     max-width: 580px;
     margin: 0 auto;
     border: 3px solid;
     border-color: #43b1d2;
     padding: 20px;
     margin: 20px;
-  }
-}
-@media (min-width: 320px) and (max-width: 575px) {
-  .clinic_card{
-    &__logo{
-      max-width: 200px;
+
+    &_head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      @media (max-width: 627px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+    }
+
+    &_logo {
+      width: 200px;
       margin: 0 auto;
     }
-  &__head {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  &__title {
-    font-family: "Myriad Pro";
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1px;
-  }
-  &__name {
-    margin: 20px 0 40px 0;
-  }
-  &__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic;
-  }
-  &__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  &__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-  &__footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  &__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px;
-  }
-  }
-}
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .clinic_card{
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
+    &_title {
+      font-family: "Myriad Pro";
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+      @media (max-width: 627px) {
+        font-size: 26px;
+        text-align: center;
+      }
+    }
 
-  }
-  &__name {
-    margin: 20px 0 40px 0;
-  }
-  &__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic;
-  }
-  &__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  &__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px;
-  }
-  }
-}
+    &_name {
+      margin: 10px 0px 35px 0px;
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .clinic_card{
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
+    }
 
-  }
-  &__name {
-    margin: 20px 0 40px 0;
-  }
-  &__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic;
-  }
-  &__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  &__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px;
-  }
-  }
-}
+    &_adrress {
+      font-family: "Tahoma";
+      font-size: 14px;
+      color: #43b1d2;
+      font-style: italic;
+    }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .clinic_card{
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
+    &_info {
+      font-family: "Calibri";
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
 
-  }
-  &__name {
-    margin: 20px 0 40px 0;
-  }
-  &__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic;
-  }
-  &__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  &__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px;
-  }
-  }
-}
+    &_footer {
+      display: flex;
+      justify-content: space-between;
+      //flex-wrap: wrap;
+      @media (max-width: 462px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-@media (min-width: 1200px) {
-  .clinic_card{
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__title {
-    font-family: "Myriad Pro";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
+    &_number {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-  }
-  &__name {
-    margin: 20px 0 40px 0;
-  }
-  &__adrress {
-    font-family: "Tahoma";
-    font-size: 14px;
-    color: #43b1d2;
-    font-style: italic;
-  }
-  &__info {
-    font-family: "Calibri";
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  &__number {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: bold;
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__button {
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    background-color: #37c3a8;
-    border: solid;
-    border-radius: 5px;
-    border-color: #37c3a8;
-    color: white;
-    padding: 5px 10px;
-  }
+    &_button {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      background-color: #37c3a8;
+      border: solid;
+      border-radius: 5px;
+      border-color: #37c3a8;
+      color: white;
+      padding: 5px 10px;
+      @media (max-width: 462px) {
+        margin-top: 10px;
+      }
+    }
   }
 }
