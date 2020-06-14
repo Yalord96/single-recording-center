@@ -452,7 +452,7 @@ figure {
   background-color: #cad3e5; }
 
 .recall {
-  background-image: url("../../src/recall/img/header_background.png");
+  background-image: url("../../dist/img/recall/img/header_background.png");
   height: 515px;
   max-width: 1440px;
   margin: 0 auto;
@@ -940,7 +940,7 @@ figure {
   height: 30px;
   width: 40px;
   display: inline-block;
-  background: url(../../img/socials.png) no-repeat; }
+  background: url(../../dist/img/img/socials.png) no-repeat; }
   .socials_google {
     background-position: -40px 0;
     cursor: pointer; }
@@ -955,22 +955,22 @@ figure {
     cursor: pointer; }
 
 .border-1 {
-  border: 2px solid #cd99ad; }
+  border: 2px solid #2c427f; }
 
 .border-2 {
-  border: 4px solid #f7b5c6; }
+  border: 4px solid #faa4e6; }
 
 .border-3 {
-  border: 2px solid #e52fce; }
+  border: 2px solid #ee1faf; }
 
 .border-4 {
-  border: 4px solid #b2d529; }
+  border: 4px solid #495908; }
 
 .border-5 {
-  border: 2px solid #f19260; }
+  border: 2px solid #48591d; }
 
 .border-6 {
-  border: 4px solid #19a2b8; }
+  border: 4px solid #bb18ae; }
 
 .clinic {
   display: flex;
