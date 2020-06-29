@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("// random color button clinic cards\r\nconst setBg = () => {\r\n    const randomColor = Math.floor(Math.random()*16777215).toString(16);\r\n    return  \"#\" + randomColor;\r\n  }\r\n\r\n$('.clinic__card_button').click(function () {\r\n    $( this ).css('backgroundColor', setBg)\r\n});\r\n\r\n// var test = document.getElementById('random_color');\r\n// const setBg = () => {\r\n//     const randomColor = Math.floor(Math.random()*16777215).toString(16);\r\n//     test.style.backgroundColor= \"#\" + randomColor;\r\n// }\r\n// test.addEventListener(\"click\", setBg);\r\n\r\n// Tabs clinics\r\n$( function() {\r\n    $( \"#tabs\" ).tabs();\r\n} );\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

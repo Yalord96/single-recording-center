@@ -10,14 +10,60 @@ $odd: 2px;
   }
 }
 
+@for $i from 1 through 18 {
+  #tabs-#{$i}{
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0;
+    margin: 0 auto 15px auto;
+    border: 1px solid #e3e6ea;
+    border-top: none;
+  }
+}
+
+.main__nav{
+  margin-top: 35px;
+  padding: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-bottom: 1px solid #e3e6ea;
+
+  &_li{
+    display: inline-flex;
+    :focus {
+      margin: -1px;
+      border: 1px solid #e3e6ea;
+      border-bottom:1px solid #fff;
+      color:#494848;
+    }
+  }
+  &_link{
+    padding: 15px;
+    color:#43b1d2;
+    font-size: 24px;
+    line-height: 14px;
+    font-family: "Calibri";
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.clinic-tab{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .clinic {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  //max-width: 1440px;
+  //margin: 0 auto;
   &__card {
-    max-width: 580px;
-    margin: 0 auto;
+    max-width: 550px;
+    //margin: 0 auto;
     //border: 3px solid;
     //border-color: #43b1d2;
     padding: 20px;

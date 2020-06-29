@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <script src="./dist/js/main.js"></script>-->
     <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Oxygen project</title>
 </head>
 <body>
@@ -13,7 +12,7 @@
     <div class="header">
         <div class="header__brand" aria-label="логотип сайта">
             <figure class="brand">
-                <img class="brand__img" src="dist/img/brand/img/logo.png" alt="логотип Единый центр записи">
+                <img class="brand__img" src="img/brand/img/logo.png" alt="логотип Единый центр записи">
                 <figcaption class="brand__name">Единый <br> центр записи</figcaption>
             </figure>
             <a class="brand__phone" aria-label="номер телефона" href="tel: 803005000"><i
@@ -25,7 +24,7 @@
                     <li role="listitem" class="menu__items_listitem"><a class="menu__items_links menu__items_main"
                                                                         href="">Главная</a></li>
                     <li role="listitem" class="menu__items_listitem menu__items_services"><a
-                            class="menu__items_links" href="">Услуги <img src="dist/img/img/arrow-down.png"
+                            class="menu__items_links" href="">Услуги <img src="img/img/arrow-down.png"
                                                                           alt="стрелка вниз"></a>
                         <ul class="services__items">
                             <li role="listitem"><a
@@ -83,10 +82,11 @@
 
     <section class="promo">
         <div class="container">
+
             <nav class="promo__menu">
                 <div class="promo__menu_best-treatment">
                     <figure class="promo__menu_avatar">
-                        <p class="promo__menu_circle"><img src="dist/img/promo/img/best_treatment.png"
+                        <p class="promo__menu_circle"><img src="img/promo/img/best_treatment.png"
                                                            alt="VectorSmartObject"></p>
                         <figcaption class="promo__menu_name">Best Treatment</figcaption>
                     </figure>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="promo__menu_emergency-help">
                     <figure class="promo__menu_avatar">
-                        <p class="promo__menu_circle"><img src="dist/img/promo/img/emergency_help.png"
+                        <p class="promo__menu_circle"><img src="img/promo/img/emergency_help.png"
                                                            alt="VectorSmartObject"></p>
                         <figcaption class="promo__menu_name">Emergency Help</figcaption>
                     </figure>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="promo__menu_medical-staff">
                     <figure class="promo__menu_avatar">
-                        <p class="promo__menu_circle"><img src="dist/img/promo/img/medical_staff.png"
+                        <p class="promo__menu_circle"><img src="img/promo/img/medical_staff.png"
                                                            alt="VectorSmartObject"></p>
                         <figcaption class="promo__menu_name">Medical Staff</figcaption>
                     </figure>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="promo__menu_qualified-doctors">
                     <figure class="promo__menu_avatar">
-                        <p class="promo__menu_circle"><img src="dist/img/promo/img/qualified_doctors.png"
+                        <p class="promo__menu_circle"><img src="img/promo/img/qualified_doctors.png"
                                                            alt="VectorSmartObject"></p>
                         <figcaption class="promo__menu_name">Qualified Doctors</figcaption>
                     </figure>
@@ -129,185 +129,185 @@
     </section>
 
 
-    <section class="clinic-tab">
+    <section class="clinic-tab" id="tabs">
+        <nav>
+            <ul class="main__nav">
+                <li class="main__nav_li"><a class="main__nav_link" href="#tabs-1" id="link-target">МРТ</a></li>
+                <li class="main__nav_li"><a class="main__nav_link" href="#tabs-2">КТ</a></li>
+                <li class="main__nav_li"><a class="main__nav_link" href="#tabs-3">РЕНТГЕН
+                    <span class="rentgen-full">ИССЛЕДОВАНИЯ</span></a></li>
+            </ul>
+        </nav>
         <div class="clinic">
-            <div class="clinic__list">
-                <section class="clinic__card border-1" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+            <div id="tabs-1">
+                <div class="clinic__list">
+                    <section class="clinic__card border-1" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
           <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                  href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
-            </div>
-            <div class="clinic__list">
-                <section class="clinic__card border-2" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+                            <button id="random_color" class="clinic__card_button">Заказать звонок</button>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                    </section>
+                </div>
+                <div class="clinic__list">
+                    <section class="clinic__card border-2" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
+                        </div>
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
           <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                  href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
-            </div>
-            <div class="clinic__list">
-                <section class="clinic__card border-3" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+                            <button id="random_color1" class="clinic__card_button">Заказать звонок</button>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                    </section>
+                </div>
+                <div class="clinic__list">
+                    <section class="clinic__card border-3" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
+                        </div>
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
           <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                  href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
-            </div>
-            <div class="clinic__list">
-                <section class="clinic__card border-4" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+                            <button id="random_color2" class="clinic__card_button">Заказать звонок</button>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                    </section>
+                </div>
+                <div class="clinic__list">
+                    <section class="clinic__card border-4" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
+                        </div>
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
           <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                  href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
-            </div>
-            <div class="clinic__list">
-                <section class="clinic__card border-5" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+                            <button id="random_color3" class="clinic__card_button">Заказать звонок</button>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                    </section>
+                </div>
+                <div class="clinic__list">
+                    <section class="clinic__card border-5" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
+                        </div>
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
           <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                  href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
-            </div>
-            <div class="clinic__list">
-                <section class="clinic__card border-6" itemtype="http://schema.org/Organization">
-                    <div class="clinic__card_head" role="banner">
-                        <img class="clinic__card_logo" src="dist/img/img/carepoint.png" alt="CarePoint"
-                             aria-label="логотип клиники">
-                        <div class="clinic__card_title">
-                            <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
-                                клиники</h5>
-                            <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
-                                проспект,
-                                д. 160, Ленинский проспект</p>
+                            <button id="random_color4" class="clinic__card_button">Заказать звонок</button>
                         </div>
-                    </div>
-                    <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
-                        все,
-                        кто
-                        работает с версткой журналов,
-                        дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-                        как контент впоследствии будет выглядеть на готовой странице, чтобы
-                        увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
-                    <div class="clinic__card_footer">
+                    </section>
+                </div>
+                <div class="clinic__list">
+                    <section class="clinic__card border-6" itemtype="http://schema.org/Organization">
+                        <div class="clinic__card_head" role="banner">
+                            <img class="clinic__card_logo" src="img/img/carepoint.png" alt="CarePoint"
+                                 aria-label="логотип клиники">
+                            <div class="clinic__card_title">
+                                <h5 itemprop="name" class="clinic__card_name" aria-label="Название клиники">Название
+                                    клиники</h5>
+                                <p itemprop="streetAddress" class="clinic__card_adrress" aria-labelledby="address">Ленинский
+                                    проспект,
+                                    д. 160, Ленинский проспект</p>
+                            </div>
+                        </div>
+                        <p itemprop="description" class="clinic__card_info" role="contentinfo">Что такое текст «рыба» знают
+                            все,
+                            кто
+                            работает с версткой журналов,
+                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                            как контент впоследствии будет выглядеть на готовой странице, чтобы
+                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...
+                        <div class="clinic__card_footer">
                     <span class="clinic__card_number" aria-label="позвонить">Наш номер: <a itemprop="telephone"
                                                                                            href="tel: +380560996665">+3856 0 99 66 65</a></span>
-                        <button class="clinic__card_button">Заказать звонок</button>
-                    </div>
-                </section>
+                            <button id="random_color5" class="clinic__card_button">Заказать звонок</button>
+                        </div>
+                    </section>
+                </div>
             </div>
+
         </div>
         <button class="clinic-tab__all-clinic">Все кабинеты</button>
     </section>
-    <!--
 
-    <section>
-    <nav>
-        <div>
-            <a href="#MRT">МРТ</a>
-            <a href="#">КТ</a>
-            <a href="#">Рентген исследования</a>
-        </div>
-    </nav>
-    <div id="MRT">
-       -->
     <section class="articles">
         <div class="container articles__block">
             <div class="article">
@@ -315,7 +315,7 @@
                 <ul>
                     <li>
                         <figure class="article__content">
-                            <p><img class="article__photo" src="dist/img/article/img/last_article.png" alt="картинка статьи">
+                            <p><img class="article__photo" src="img/article/img/last_article.png" alt="картинка статьи">
                             </p>
                             <figcaption class="article__text">
                                 <p class="article__section">
@@ -343,8 +343,8 @@
                 </ul>
                 <div class="article__buttons">
                     <form class="article__arrows">
-                        <button class="article__arrows_arrow"><img src="dist/img/img/arrow_left.png" alt="arrow_left"></button>
-                        <button class="article__arrows_arrow"><img src="dist/img/img/arrow_right.png" alt="arrow_right"></button>
+                        <button class="article__arrows_arrow"><img src="img/img/arrow_left.png" alt="arrow_left"></button>
+                        <button class="article__arrows_arrow"><img src="img/img/arrow_right.png" alt="arrow_right"></button>
                     </form>
                     <button class="article__read-more">Читать подробнее</button>
                 </div>
@@ -375,8 +375,8 @@
                     </li>
                 </ul>
                 <form class="article__arrows article__reviews">
-                    <button class="article__arrows_arrow"><img src="dist/img/img/arrow_left.png" alt="arrow_left"></button>
-                    <button class="article__arrows_arrow"><img src="dist/img/img/arrow_right.png" alt="arrow_right"></button>
+                    <button class="article__arrows_arrow"><img src="img/img/arrow_left.png" alt="arrow_left"></button>
+                    <button class="article__arrows_arrow"><img src="img/img/arrow_right.png" alt="arrow_right"></button>
                 </form>
             </div>
         </div>
@@ -387,7 +387,7 @@
     <div class="footer-brand">
         <div class="footer">
             <figure class="brand" role="banner">
-                <img class="brand__img" src="dist/img/brand/img/logo.png" alt="логотип Единый центр записи">
+                <img class="brand__img" src="img/brand/img/logo.png" alt="логотип Единый центр записи">
                 <figcaption class="brand__name">Единый <br> центр записи</figcaption>
             </figure>
             <form action="" class="call-back">
@@ -407,7 +407,7 @@
                 <h6 class="footer-content__title">Get in touch</h6>
                 <ul>
                     <li class="list__item">
-                        <img class="list__item-mail" src="dist/img/img/envelope.png" alt="envelope">
+                        <img class="list__item-mail" src="img/img/envelope.png" alt="envelope">
                         <div class="list__item-text">
                             <a class="list__item-text_link" href="mailto:free@psdfreebies.com"><span>free@psdfreebies.com</span></a>
                             <a class="list__item-text_link" href="mailto:free@psdfreebies.com"><span>free@psdfreebies.com</span></a>
@@ -415,14 +415,14 @@
 
                     </li>
                     <li class="list__item">
-                        <img class="list__item_phone" src="dist/img/img/icon_phone.png" alt="phone">
+                        <img class="list__item_phone" src="img/img/icon_phone.png" alt="phone">
                         <div class="list__item-text">
                             <a class="list__item-text_link" href="tel: +1234567890"><p>+123 456 7890</p></a>
                             <a class="list__item-text_link" href="tel: +1234567890"><p>+123 456 7890</p></a>
                         </div>
                     </li>
                     <li class="list__item">
-                        <img class="list__item-map" src="dist/img/img/icon_metka.png" alt="Map">
+                        <img class="list__item-map" src="img/img/icon_metka.png" alt="Map">
                         <div class="list__item-text">
                             <a class="list__item-text_link" href="https://goo.gl/maps/6xWAfdGvjfwsLS92A"><p>123, Main
                                 Road, New City,</p></a>
@@ -484,5 +484,6 @@
     </div>
     </div>
 </footer>
-</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="main.js"></script></body>
 </html>
