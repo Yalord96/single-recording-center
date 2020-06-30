@@ -24,3 +24,5 @@ gulp.task('tinypng', function () {
       }))
       .pipe(gulp.dest('dist/img'));
 });
+
+gulp.task('default', gulp.series(['scss']));
